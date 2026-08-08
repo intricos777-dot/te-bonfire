@@ -1,0 +1,12 @@
+{
+  "$schema": "./manifest.schema.json",
+  "game": "te-bonfire",
+  "description": "Sealed asset manifest. This repo contains original code only. Place your own legally-owned assets in /assets according to this manifest; the game mounts them at runtime. No retail asset is committed to this repository.",
+  "mounts": [
+    { "id": "player_mesh",     "role": "hero model",       "path": "assets/models/hero.glb",      "required": false },
+    { "id": "enemy_mesh",      "role": "knight model",    "path": "assets/models/knight.glb",     "required": false },
+    { "id": "bonfire_light",   "role": "checkpoint flame","path": "assets/textures/fire.png",     "required": false },
+    { "id": "boss_music",      "role": "boss fight track","path": "assets/audio/boss_fight.ogg",  "required": false },
+    { "id": "ambient",         "role": "world ambient",  "path": "assets/audio/ambient.ogg",      "required": false }
+  ]
+}
