@@ -11,7 +11,14 @@ A stamina-driven souls-like action-RPG *core* built on the
 - Stamina budget combat: every swing costs stamina; rushing leaves you
   exhausted and open.
 - Poise/guard state machine, HP/VIT/END/STR/DEX stat model.
-- `--sim` headless mode used by CI to prove combat math.
+- World progression: a chain of five bonfire zones (`world.h/cpp`);
+  clearing a zone lights its bonfire and unbolts the next. Run state
+  persists to `data/progress.json` (gitignored).
+- First real boss loop (`boss.h/cpp`): the Ember Watcher gate - telegraph,
+  strike, recover phases with guard-break rolls, stamina-gated offense.
+- `--sim` headless mode used by CI: fights the Watcher, maps the result
+  onto the zone chain and cross-checks hidden-boss unlock hints.
+- Hidden-boss registry with authored unlock conditions (`hidden_boss.h`).
 
 ## Asset policy (sealed manifest)
 

@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(/home/sin/Projects/twilight-elysium ${CMAKE_BINARY_DIR}/twilight-elysium)
 
-add_executable(te-bonfire src/main.cpp)
+add_executable(te-bonfire src/main.cpp src/world.cpp src/boss.cpp src/hidden_boss.cpp)
 target_include_directories(te-bonfire PRIVATE src)
 target_link_libraries(te-bonfire PRIVATE te-engine)
 

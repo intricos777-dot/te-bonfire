@@ -2,3 +2,5 @@ build/
 assets/
 *.o
 *.a
+Testing/
+data/progress.json
